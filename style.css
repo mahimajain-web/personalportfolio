@@ -1,0 +1,311 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    
+}
+
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    
+}
+
+
+.intro {
+    text-align: center;
+    background: #ffffff;
+    padding: 120px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+
+.intro h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.name {
+    color: #0077b6;
+}
+
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #0077b6;
+    margin-bottom: 20px;
+}
+
+
+.bio {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+
+.name:hover {
+    color: #00b4d8;
+    transition: color 0.3s ease;
+}
+
+@media (max-width: 600px) {
+    .intro {
+        padding: 25px;
+    }
+
+    .intro h1 {
+        font-size: 1.8rem;
+    }
+
+    .bio {
+        font-size: 1rem;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+.intro {
+    position: relative; 
+}
+div{
+    background: #000709;
+    
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 80vw;
+    font-size: 25px;
+    
+
+}
+
+
+.intro-nav { 
+    
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+
+
+
+
+
+
+.intro-nav ul {
+    
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.intro-nav a {
+    text-decoration: none;
+    color:white;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.intro-nav a:hover {
+    color: #00b4d8;
+}
+
+
+@media (max-width: 600px) {
+    .intro-nav {
+        right: 15px;
+        top: 15px;
+    }
+
+    .intro-nav ul {
+        gap: 12px;
+    }
+
+    .intro-nav a {
+        font-size: 0.9rem;
+    }
+    
+    div {
+        font-size: 18px;         
+        padding: 8px;
+        width: 100%;
+    }
+}
+
+
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+.skills-section {
+    width: 90%;
+    margin: 60px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+
+.skills-section h1 {
+    text-align: center;
+    color: #0077b6;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+}
+
+
+.skills-category {
+    margin-bottom: 30px;
+}
+
+.skills-category h2 {
+    color: #023e8a;
+    border-left: 4px solid #0077b6;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+
+.skills-category ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills-category li {
+    background: #e0f7ff;
+    margin: 8px 0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.skills-category li:hover {
+    background: #b3e5fc;
+    transform: translateX(5px);
+}
+
+
+@media (max-width: 768px) {
+    .skills-section {
+        padding: 20px;
+        margin: 40px auto;
+    }
+
+    .skills-category h2 {
+        font-size: 1.1rem;
+    }
+
+    .skills-category li {
+        padding: 8px 12px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-section {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .skills-section h1 {
+        font-size: 1.5rem;
+        padding-bottom: 6px;
+    }
+
+    .skills-category h2 {
+        font-size: 1rem;
+    }
+
+    .skills-category li {
+        padding: 6px 10px;
+        font-size: 0.9rem;
+    }
+}
+
+
+.projects-section {
+    width: 90%;
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.projects-section h1 {
+    color: #0077b6;
+    margin-bottom: 20px;
+    border-bottom: 4px double #0077b6;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.projects-section .projects-info {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 20px;
+}
+
+.projects-section .badge {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #e0f7ff;
+    color: #0077b6;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 480px) {
+    .projects-section {
+        padding: 20px;
+    }
+    .projects-section h1 {
+        font-size: 1.5rem;
+    }
+    .projects-section .projects-info {
+        font-size: 1rem;
+    }
+    .projects-section .badge {
+        padding: 10px 15px;
+        font-size: 0.95rem;
+    }
+}
+
+
+
+
+
+
